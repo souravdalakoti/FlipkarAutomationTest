@@ -87,7 +87,7 @@ public TestBase(){
 			URL url=new URL("http://192.168.137.1:4444/wd/hub");
 			 driver= new RemoteWebDriver(url, option);
 			}
-			
+		*/	
 		
 		e_driver =new EventFiringWebDriver(driver);
 		eventlistener= new WebEventListener();
@@ -102,8 +102,8 @@ public TestBase(){
 		driver.get(prop.getProperty("url"));	
 		}
 	
-		*/
+		
 	}
-	}
+	
 
 
