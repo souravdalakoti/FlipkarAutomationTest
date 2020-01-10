@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite name="Flipkart Test Automation">
+  <listeners>
+		<listener class-name="com.flipkart.qa.util.ExtentListener" />
+	</listeners>
+	
+  <test name="Flipkart Test_Linux">
+  <parameter name="port" value="4401"></parameter>
+	 <classes>
+	   <class name="com.flipkart.qa.testcases.LoginPageTest"></class>
+	   <class name="com.flipkart.qa.testcases.HomePageTest"></class>
+	 </classes>
+   </test>
+   <test name="Flipkart Test_Windows">
+  <parameter name="port" value="4402"></parameter>
+	 <classes>
+	   <class name="com.flipkart.qa.testcases.LoginPageTest"></class>
+	   <class name="com.flipkart.qa.testcases.HomePageTest"></class>
+	 </classes>
+   </test>
+  
+</suite>
